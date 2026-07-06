@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Novel Library</title>
+<style>
+  :root {
+    --bg: #fbf7ee; --text: #2a2620; --accent: #a8763e; --muted: #8a8272;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px 90px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  h1 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+  .subtitle { color: var(--muted); font-size: 14px; margin-bottom: 30px; }
+  .chapter-list { display: flex; flex-direction: column; gap: 10px; }
+  .chapter-card {
+    background: var(--card);
+    border: 1px solid #e9e1cc;
+    border-radius: 10px;
+    padding: 14px 18px;
+    text-decoration: none;
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+  }
+  .chapter-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    border-color: var(--accent);
+  }
+  .chapter-num {
+    font-weight: 700; color: var(--accent); min-width: 70px;
+  }
+  .chapter-title { flex: 1; padding: 0 12px; }
+  .chapter-date { font-size: 12px; color: var(--muted); white-space: nowrap; }
+  .empty { color: var(--muted); font-style: italic; padding: 30px 0; }
+</style>
+</head>
+<body>
+  <h1>My Novel Library</h1>
+  <div class="subtitle">2 chapter(s) translated · updated 2026-07-06 23:10</div>
+  <div class="chapter-list">
+    <a class="chapter-card" href="chapter_001.html"><span class="chapter-num">Ch. 1</span><span class="chapter-title">This Old Fella's a Real Pain</span><span class="chapter-date">2026-07-06</span></a>
+    <a class="chapter-card" href="chapter_002.html"><span class="chapter-num">Ch. 2</span><span class="chapter-title">The Goddess of Jiangnan University</span><span class="chapter-date">2026-07-06</span></a>
+  </div>
+</body>
+</html>
